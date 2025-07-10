@@ -1,28 +1,27 @@
-*{
+/*manipula todo el cuerpo de la pagina*/
+* {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-.part-one img{
+.part-one img { /*da estilo a la imagen numero uno*/
     height: 200px;
     transform: translate(425%, 0);
 }
 
-.part-one h1{
-margin: 25px;
-font-size: 70px;
-font-family: Arial, Helvetica, sans-serif;
-transform: translate(23%,0);
-
+.part-one h1 { /*da estilo al titulo*/
+    margin: 25px;
+    font-size: 70px;
+    transform: translate(23%, 0);
 }
-.part-one p{
+
+.part-one p { /*da estilo al parrafo*/
     color: rgb(152, 155, 158);
-    transform: translate(30%,0);
-
+    transform: translate(30%, 0);
 }
-.button-one{
+
+.button-one { /*da estilo al boton 1*/
     margin: 125px;
     width: 200px;
     height: 40px;
@@ -30,11 +29,10 @@ transform: translate(23%,0);
     border-radius: 30px;
     transform: translate(570px);
     color: white;
-    align-content: center;
     border: #58c9a3;
 }
 
-.button-two{
+.button-two { /*da estilo al boton dos*/
     width: 200px;
     height: 40px;
     border-radius: 30px;
@@ -42,151 +40,260 @@ transform: translate(23%,0);
     background-color: blue;
     transform: translate(520px);
     border: blue;
-
 }
 
-.part-two{
+.part-two { /*da estilo a toda la clase 2*/
     display: grid;
 }
-.part-two h1{
-    font-size: medium;
-    color: rgb(0, 0, 0);
-    transform: translate(41%, 100%);
+
+.part-two h1 {
     font-size: 25px;
+    transform: translate(41%, 100%);
 }
-.part-two p{
+
+.part-two p {
     margin: 40px;
     transform: translate(37%);
     text-align: justify;
 }
-.part-two img{
+
+.part-two img {
     margin: 100px;
 }
 
-
-
-.alternative{
-    transform: translate(1100px,-620px);
-
+.alternative { /*da estilo a la clase alternativa creada para solucionar*/
+    transform: translate(1100px, -620px);
 }
 
-
-
-.title-two{
+.title-two {
     margin-top: 80px;
 }
 
-.title-three{
+.title-three {
     margin-top: 80px;
 }
 
-.parrafo-one{
+.parrafo-one,
+.parrafo-two,
+.parrafo-three {
     color: rgb(130, 132, 134);
 }
-.parrafo-two{
-    color: rgb(130, 132, 134);
-}
-.parrafo-three{
-    color: rgb(130, 132, 134);
-}
-
+/*le da estilo a la parte de la clase numero 3*/
 .part-three h1 {
-font-size: 45px;
-    transform: translate(600px,-255px);
+    font-size: 45px;
+    transform: translate(600px, -255px);
 }
-.part-three p{
+
+.part-three p {
     color: rgb(130, 132, 134);
-    transform: translate(510px,-250px);
+    transform: translate(510px, -250px);
     margin-top: 20px;
-}   
-.part-three img{
+}
+
+.part-three img {
     margin-top: -80px;
     transform: translate(350px);
     height: 650px;
-
 }
 
-.part-four h1{
+.part-four h1 { /*edita el parrafo de la clase 4*/
     transform: translate(750px);
-
 }
-.parrafo{
+
+.parrafo {
     color: rgb(130, 132, 134);
     transform: translate(756px);
     margin-top: 20px;
 }
 
-.alternative-two{
+.alternative-two {/*clase alternativa numero dos*/
     display: flex;
     display: inline-block;
     text-align: center;
     margin-top: 150px;
-
+}
+/*edita todos los iconos*/
+.black-list {
+    transform: translate(110px, -15px);
 }
 
-.black-list{
-transform: translate(110px, -15px);
-}
-
-.plain-text{
+.plain-text {
     transform: translate(735px, -130px);
 }
 
-.icon-preview{
+.icon-preview {
     transform: translate(1400px, -230px);
-
-
 }
 
-.part-five{
+.part-five { /*da estilos a toda la clase sinco*/
     display: flex;
-    justify-content:space-around;
-    
-
+    justify-content: space-around;
 }
 
-.part-six h1{
-    margin-top: 80px;
-    font-size: 30px;
-    text-align: center;
-    
-
+/*da estilo a toda la clase seis*/
+.part-six h1 { 
+margin-top: 80px;
+font-size: 30px;
+text-align: center;
 }
-.part-six p{
+
+.part-six p {
     margin-top: 30px;
     color: rgb(130, 132, 134);
     text-align: center;
 }
-
-footer{
+/*da estilo a todo el pie de pagina*/
+footer {
     background-color: rgb(216, 216, 216);
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-right: 10px;
-    
 }
-footer img{
+
+footer img {
     margin: 7px;
     height: 30px;
-    transform: translate(1550px,30px);
+    transform: translate(1550px, 30px);
 }
 
-
-.icon{
+.icon {
     height: 80px;
-
     transform: translate(25px);
 }
 
-footer ul{
-  display: flex;
-  justify-content: space-around;
+footer ul {
+    display: flex;
+    justify-content: space-around;
 }
 
 footer li {
-  display: inline-block; 
-  width: 30%; 
+    display: inline-block;
+    width: 30%;
 }
+/*da estilo a la media query desde 468px hasta 1023px*/
+@media (min-width: 468px) and (max-width: 1023px) {
+    .part-one img,
+    .part-one h1,
+    .part-one p,
+    .button-one,
+    .button-two {
+        transform: none;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .part-one h1 {
+        font-size: 28px;
+    }
+
+    .part-two {
+        display: block;
+        text-align: center;
+    }
+
+    .part-two h1 {
+        transform: none;
+        font-size: 22px;
+        margin: 20px auto;
+    }
+
+    .part-two p {
+        transform: none;
+        margin: 20px;
+    }
+
+    .part-two img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .alternative {
+        transform: none;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .alternative h3,
+    .alternative p {
+        margin: 15px auto;
+    }
+
+    .alternative-two {
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .black-list,
+    .plain-text,
+    .icon-preview {
+        transform: none;
+        margin: 20px auto;
+    }
+
+    .part-three h1,
+    .part-three p,
+    .part-three img {
+        transform: none;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .part-three img {
+        width: 100%;
+        height: auto;
+    }
+
+    .part-four h1,
+    .parrafo {
+        transform: none;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .part-five {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .part-six h1,
+    .part-six p {
+        text-align: center;
+        margin: 10px 20px;
+    }
+
+    .button-one,
+    .button-two {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    footer img {
+        transform: none;
+        margin: 10px auto;
+    }
+
+    .icon {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+
 
 
